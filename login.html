@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login — لُقمة</title><link rel="stylesheet" href="style.css"><script>try{document.documentElement.dataset.theme=localStorage.getItem("luqma-theme")||"light";document.documentElement.lang=localStorage.getItem("luqma-lang")||"en";document.documentElement.dir=document.documentElement.lang==="ar"?"rtl":"ltr"}catch(e){}</script></head>
+<body class="auth-body"><div class="global-controls" aria-label="Display controls">
+<button class="global-lang lang-btn" type="button" onclick="toggleLanguage()">عربي</button>
+<button class="global-theme theme-btn" type="button" onclick="toggleTheme()" aria-label="Dark mode">☾</button>
+</div><div class="noise"></div><a class="brand auth-brand" href="index.html"><span class="brand-mark">لُ</span><span>لُقمة</span></a>
+<main class="auth-wrap">
+  <section class="auth-art">
+    <span class="eyebrow">WELCOME TO LUQMA</span>
+
+    <h1>
+      BITE <span class="lime">HAPPY!</span>
+    </h1>
+
+    <div class="auth-face">◉‿◉</div>
+
+    <h5>Every day starts with a simple choice.</h5>
+  </section>
+  
+  <section class="auth-card"><div class="tabs"><button class="active" onclick="showAuth('login',this)">LOG IN</button><button onclick="showAuth('signup',this)">SIGN UP</button></div>
+<form id="loginForm" onsubmit="loginUser(event)">
+  <span class="eyebrow">GOOD TO SEE YOU</span>
+  <h2>WELCOME BACK!</h2>
+
+  <label>
+    EMAIL
+    <input id="loginEmail" type="email" placeholder="you@email.com" required>
+  </label>
+
+  <label>
+    PASSWORD
+    <input id="loginPassword" type="password" placeholder="••••••••" required>
+  </label>
+
+  <div class="form-row">
+    <label class="check">
+      <input type="checkbox"> Remember me
+    </label>
+    <a href="#">Forgot password?</a>
+  </div>
+
+<button class="pill primary">LET'S GO!</button></form>
+<form id="signupForm" class="hidden" onsubmit="signupUser(event)">
+  <span class="eyebrow">NEW AROUND HERE?</span>
+  <h2>JOIN THE PARTY!</h2>
+
+  <label>
+    NAME
+    <input id="signupName" placeholder="Your name" required>
+  </label>
+
+  <label>
+    EMAIL
+    <input id="signupEmail" type="email" placeholder="you@email.com" required>
+  </label>
+
+  <label>
+    PASSWORD
+    <input id="signupPassword" type="password" placeholder="Create a password" required>
+  </label>
+
+  <button class="pill primary wide">CREATE ACCOUNT </button>
+</form>
+</section></main><script src="script.js"></script></body></html>

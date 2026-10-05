@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Luqma - لُقمة</title><link rel="stylesheet" href="style.css"><script>try{document.documentElement.dataset.theme=localStorage.getItem("luqma-theme")||"light";document.documentElement.lang=localStorage.getItem("luqma-lang")||"en";document.documentElement.dir=document.documentElement.lang==="ar"?"rtl":"ltr"}catch(e){}</script></head>
+<body><div class="global-controls" aria-label="Display controls">
+<button class="global-lang lang-btn" type="button" onclick="toggleLanguage()">عربي</button>
+<button class="global-theme theme-btn" type="button" onclick="toggleTheme()" aria-label="Dark mode">☾</button>
+</div><div class="noise"></div><header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">لُ</span><span>لُقمة</span></a><nav><a href="index.html">HOME</a><a href="explore.html">EXPLORE</a><a class="active" href="myday.html">MY MEALS</a><a href="profile.html">PROFILE</a></nav><a class="pill ghost login-btn" href="login.html">LOG IN </a></header>
+<main class="inner"><section class="page-intro compact"><h1><span class="lime">MY MEALS</span></h1></section><section class="day-layout"><div class="timeline">
+<div id="dailyMealsList"></div><div class="add-meal"><a href="explore.html"> ADD ANOTHER BITE</a></div></div>
+<aside class="day-summary"><span class="sticker small">TODAY!</span><h2 id="totalCalories">0</h2>
+<p>KCAL EATEN</p><hr><div><span>Protein</span><b id="totalProtein">0g</b></div>
+<div><span>Carbs</span><b id="totalCarbs">0g</b></div>
+<div><span>Fat</span><b id="totalFat">0g</b></div>
+<div><span>Sugar</span><b id="totalSugar">0g</b></div><div class="mood">★ ON TRACK!</div></aside></section>
+</main><script src="script.js"></script></body></html>

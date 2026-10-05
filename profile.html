@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Profile — لُقمة</title><link rel="stylesheet" href="style.css"><script>try{document.documentElement.dataset.theme=localStorage.getItem("luqma-theme")||"light";document.documentElement.lang=localStorage.getItem("luqma-lang")||"en";document.documentElement.dir=document.documentElement.lang==="ar"?"rtl":"ltr"}catch(e){}</script></head>
+<body><div class="global-controls" aria-label="Display controls">
+<button class="global-lang lang-btn" type="button" onclick="toggleLanguage()">عربي</button>
+<button class="global-theme theme-btn" type="button" onclick="toggleTheme()" aria-label="Dark mode">☾</button>
+</div><div class="noise"></div><header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">لُ</span><span>لُقمة</span></a><nav><a href="index.html">HOME</a><a href="explore.html">EXPLORE</a><a href="myday.html">MY MEALS</a><a class="active" href="profile.html">PROFILE</a></nav><a class="pill ghost login-btn" href="login.html">LOG OUT </a></header>
+<main class="inner"><section class="profile-hero"><div class="avatar">:)</div><div><h1 class="scribble">HEY, <span id="profileDisplayName"></span>!</h1></div><button class="pill dark" onclick="document.getElementById('nutritionGoals').scrollIntoView({behavior:'smooth'})">
+  EDIT PROFILE ✎
+</button></section>
+
+
+<section class="profile-grid">
+
+  <article class="goal-card calorie-lavender">
+  <span>DAILY ENERGY</span>
+  <strong id="profileCalorieDisplay">0</strong>
+  <small>KCAL</small>
+</article>
+
+  <article class="goal-card protein-pink">
+  <span>PROTEIN GOAL</span>
+  <strong id="profileProteinDisplay">0</strong>
+  <small>GRAMS</small>
+  
+</article>
+<article class="goal-card carbs-blue">
+  <span>CARBS GOAL</span>
+  <strong id="profileCarbsDisplay">0</strong>
+  <small>GRAMS</small>
+</article>
+
+  <article class="goal-card sugar-green">
+  <span>SUGAR LIMIT</span>
+  <strong id="profileSugarDisplay">0</strong>
+  <small>GRAMS</small>
+</article>
+
+  <article class="settings-card">
+
+<h2 id="nutritionGoals">NUTRITION GOALS</h2>   
+
+    <label>
+      Daily calorie goal
+     <input
+  id="profileCalorieInput"
+  type="number"
+  min="0"
+  step="5"
+>
+    </label>
+
+    <label>
+      Protein goal
+      <input
+        id="profileProteinInput"
+        type="number"
+        min="0"
+        step="5"
+      >
+    </label>
+
+<label>
+  Carbs goal
+  <input type="number" id="profileCarbsInput" step="5">
+</label>
+
+    <label>
+      Sugar limit
+      <input
+        id="profileSugarInput"
+        type="number"
+        min="0"
+        step="5"
+      >
+    </label>
+
+    <label>
+      Favorite vibe
+      <select id="profileVibeInput">
+        <option value="balanced">Balanced & colorful</option>
+        <option value="high-protein">High protein</option>
+        <option value="plant-powered">Plant powered</option>
+      </select>
+    </label>
+
+    <button
+      class="pill primary"
+      type="button"
+      onclick="saveProfileSettings()"
+    >
+      SAVE CHANGES
+    </button>
+
+  </article>
+
+</section>
+</main><script src="script.js"></script></body></html>

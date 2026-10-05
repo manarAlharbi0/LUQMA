@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لُقمة — Eat Bright</title>
+  <link rel="stylesheet" href="style.css"><script>try{document.documentElement.dataset.theme=localStorage.getItem("luqma-theme")||"light";document.documentElement.lang=localStorage.getItem("luqma-lang")||"en";document.documentElement.dir=document.documentElement.lang==="ar"?"rtl":"ltr"}catch(e){}</script>
+</head>
+<body><div class="global-controls" aria-label="Display controls">
+<button class="global-lang lang-btn" type="button" onclick="toggleLanguage()">عربي</button>
+<button class="global-theme theme-btn" type="button" onclick="toggleTheme()" aria-label="Dark mode">☾</button>
+</div>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">لُ</span><span>لُقمة</span></a>
+    <nav>
+      <a class="active" href="index.html">HOME</a>
+      <a href="explore.html">EXPLORE</a>
+      <a href="myday.html">MY MEALS</a>
+      <a href="profile.html">PROFILE</a>
+    </nav>
+<a class="pill ghost login-btn" href="login.html">LOG IN ↗</a>  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+<h1>
+  <span class="eat-line">EAT <span class="scribble">بذكاء.</span></span><br>
+  <span class="feel-line">FEEL <span class="lime">بالخِفة!</span></span>
+</h1>     <p>LUQMA, YOUR NUTRITIONAL BALANCE STARTS WITH THE FIRST BITE.</p>
+        <div class="hero-actions">
+          <a class="pill primary explore-btn" href="explore.html">START EXPLORING </a>
+          <a class="round-btn" href="#today">↓</a>
+        </div>
+       <div class="mini-stats">
+  <div><b id="homeCalorieGoal">0</b><span>kcal goal</span></div>
+  <div><b id="homeProteinGoal">0g</b><span>protein goal</span></div>
+<div><b id="homeMealsCount">0</b><span>MEALS LOGGED</span></div>
+</div>
+      </div>
+
+      <div class="hero-art food-wall" aria-label="Food illustrations">
+        <div class="food-doodle fd-avocado"><span></span></div>
+        <div class="food-doodle fd-toast"></div>
+        <div class="food-doodle fd-egg"><span></span></div>
+        <div class="food-doodle fd-orange"></div>
+        <div class="food-doodle fd-strawberry">• •<br>• • •</div>
+        <div class="food-doodle fd-cherry"><i></i><b></b></div>
+      </div>
+        <div class="sticker">GOOD<br>MOOD<br>FOOD!</div>
+      </div>
+    </section>
+
+    <section id="today" class="today-section">
+      <div class="section-heading">
+        <div><h2>YOUR DAY AT A GLANCE</h2></div>
+<a class="pill dark home-meals-btn" href="myday.html">MY MEALS</a>      </div>
+
+      <div class="dashboard-grid">
+        <article class="cal-card">
+          <span class="card-tag">ENERGY</span>
+          <div class="ring" style="--p:62"><div><strong id="homeCaloriesEaten">0</strong>
+<small>of <span id="homeCaloriesTarget">0</span> kcal</small></div></div>
+<p>
+  Nice pace! You’ve got
+  <b><span id="homeCaloriesLeft">0</span> kcal</b>
+  left for today.
+</p>        </article>
+        <article class="macro-card pink">
+          <div class="icon-face">P</div><span>PROTEIN</span><strong>
+  <span id="homeProteinEaten">0</span>
+  <small> / <span id="homeProteinTarget">0</span>g</small>
+</strong>
+          <div class="meter"><i style="width:63%"></i></div><em id="homeProteinPercent">0%</em>
+        </article>
+        <article class="macro-card yellow">
+          <div class="icon-face">C</div><span>CARBS</span><strong>
+  <span id="homeCarbsEaten">0</span>
+  <small> / <span id="homeCarbsTarget">0</span>g</small>
+</strong>
+          <div class="meter"><i style="width:66%"></i></div><em id="homeCarbsPercent">0%</em>
+        </article>
+        <article class="macro-card blue">
+          <div class="icon-face">F</div><span>FAT</span><strong>
+  <span id="homeFatEaten">0</span>
+  <small> / <span id="homeFatTarget">0</span>g</small>
+</strong>
+          <div class="meter"><i style="width:63%"></i></div><em id="homeFatPercent">0%</em>
+        </article>
+      </div>
+    </section>
+
+    <section class="food-strip">
+      <div class="section-heading"><div><span class="eyebrow">QUICK PICKS</span><h2>WHAT SOUNDS GOOD?</h2></div></div>
+      <div class="food-cards">
+        <a class="food-card c1" href="explore.html"><div class="food-emoji">🥞</div><span>BREAKFAST</span><h3>Berry Pancakes</h3><p>320 <span>KCAL</span> · 12G <span>PROTEIN</span></p></a>
+        <a class="food-card c2" href="explore.html"><div class="food-emoji">🥑</div><span>FRESH</span><h3>Avocado Toast</h3><p>280 <span>KCAL</span> · 9G <span>PROTEIN</span></p></a>
+        <a class="food-card c3" href="explore.html"><div class="food-emoji">🍓</div><span>SNACK</span><h3>Berry Yogurt</h3><p>190 <span>KCAL</span> · 14G <span>PROTEIN</span></p></a>
+        <a class="food-card c4" href="explore.html"><div class="food-emoji">🍜</div><span>DINNER</span><h3>Veggie Noodles</h3><p>410 <span>KCAL</span> · 18G <span>PROTEIN</span></p></a>
+      </div>
+    </section>
+  </main>
+
+<footer class="site-footer">
+
+  <div class="footer-top">
+
+    <div class="footer-about">
+      <div class="brand">
+        <span class="brand-mark">لُ</span>
+        <span>لُقمة</span>
+      </div>
+
+      <p>
+        <strong>عن لُقمة:</strong>
+        تساعدك على تسجيل وجباتك ومتابعة قيمك الغذائية بسهولة.
+      </p>
+    </div>
+
+    <div class="footer-contact">
+      <strong>تواصل معنا:</strong>
+      <a href="mailto:contact@luqma.com">contact@luqma.com</a>
+    </div>
+    <div>          <strong>  © 2026 لُقمة </strong>
+  </div>
+
+  </div>
+
+</footer>
+
+ <script src="script.js"></script>
+</body>
+</html>
