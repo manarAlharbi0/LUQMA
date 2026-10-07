@@ -112,8 +112,7 @@ app.get("/api/daily-meals/:userId", (req, res) => {
       foods.carbs,
       foods.fat,
       foods.sugar,
-      foods.image
-
+REPLACE(foods.image, 'images/', '') AS image
     FROM daily_meals
 
     JOIN foods
