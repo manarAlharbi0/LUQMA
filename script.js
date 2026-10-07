@@ -132,8 +132,9 @@ async function loadFoodsFromDatabase() {
         name: dbFood.name_en,
         name_ar: dbFood.name_ar,
 img: dbFood.image
-  ? dbFood.image.replace("images/", "")
-  : dbFood.image,        cat: dbFood.category,
+  ? dbFood.image.split("/").pop()
+  : "",    
+    cat: dbFood.category,
 
         cal: dbFood.calories,
         protein: dbFood.protein,
