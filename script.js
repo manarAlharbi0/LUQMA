@@ -412,7 +412,7 @@ document.getElementById("totalSugar").textContent = Math.round(sugar) + "g";
 
             <div class="meal-emoji">
               <img
-                src="${meal.image}"
+             src="${meal.image ? meal.image.split('/').pop() : ''}"
                 alt="${name}"
                 style="width:70px;height:70px;object-fit:cover;border-radius:14px;"
               >
